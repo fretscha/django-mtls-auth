@@ -1,0 +1,35 @@
+*.py[cod]
+__pycache__
+
+# virtual environment
+.venv
+
+# poetry 
+dist
+
+# Macos
+.DS_Store
+
+# Unit test / coverage reports
+.coverage
+.nox
+nosetests.xml
+htmlcov
+.pytest_cache
+
+# Translations
+*.mo
+
+# Sphinx
+docs/_build
+
+# certs
+*.csr 
+*.key 
+*.crt 
+*.srl 
+*.p12 
+
+# Django example db
+example/db.sqlite3
+

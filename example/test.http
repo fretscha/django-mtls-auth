@@ -1,0 +1,23 @@
+GET http://127.0.0.1:8000/protect/protected/
+X-Ssl-User-Dn: O=MyOrg,L=Bern,ST=Bern,C=CH,GN=test,SN=client,E=test.client@client.tld,CN=Test Client (user2845)
+X-Ssl-Issuer-Dn: O=MyOrg,L=Bern,ST=Bern,C=CH,CN=DummyCA Root CA
+X-Ssl-Authenticated: SUCCESS
+
+
+###
+GET http://127.0.0.1:8000/protect/protected/
+X-Ssl-User-Dn: O=MyOrg,L=Bern,ST=Bern,C=CH,GN=test,SN=client,E=test.client@client.tld,CN=Test Client (user2845)
+X-Ssl-Issuer-Dn: O=MyOrg,L=Bern,ST=Bern,C=CH,CN=DummyCA Root CA
+X-Ssl-Authenticated: FAILURE
+
+
+###
+GET http://127.0.0.1:8000/protect/headers/
+
+###
+GET http://127.0.0.1:8000/protect/headers/
+X-Ssl-User-Dn: O=MyOrg,L=Bern,ST=Bern,C=CH,GN=test,SN=client,E=test.client@client.tld,CN=Test Client (user2845)
+X-Ssl-Issuer-Dn: O=MyOrg,L=Bern,ST=Bern,C=CH,CN=DummyCA Root CA
+X-Ssl-Authenticated: SUCCESS
+
+

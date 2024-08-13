@@ -1,0 +1,5 @@
+basicConstraints        = critical,CA:TRUE
+subjectKeyIdentifier    = hash
+authorityKeyIdentifier  = keyid:always,issuer
+keyUsage                = critical,keyCertSign, cRLSign
+nsComment               = "OpenSSL Generated Certificate"
