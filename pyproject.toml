@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "django-tls-auth"
-version = "0.1.4"
+version = "0.2.0"
 description = "Enable mTLS authetication to your Django project"
 authors = ["Frederic Tschannen <fretscha@umx.net>"]
 license = "MIT"
@@ -34,11 +34,11 @@ classifiers = [
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
-    "Framework :: Django",
     "Framework :: Django :: 4.2",
     "Framework :: Django :: 5.1",
     "Topic :: Internet :: WWW/HTTP :: HTTP Servers",
     "Topic :: Internet :: WWW/HTTP",
+    "Development Status :: 4 - Beta",
 ]
 include = ["LICENSE.md"]
 
