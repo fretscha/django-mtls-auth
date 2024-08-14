@@ -13,7 +13,7 @@ Types of Contributions
 Report Bugs
 ~~~~~~~~~~~
 
-Report bugs at https://github.com/fretscha/django-tls-auth/issues.
+Report bugs at https://github.com/fretscha/django-mtls-auth/issues.
 
 If you are reporting a bug, please include:
 
@@ -36,14 +36,14 @@ is open to whoever wants to implement it.
 Write Documentation
 ~~~~~~~~~~~~~~~~~~~
 
-django-tls-auth could always use more documentation, whether as part of the 
-official django-tls-auth docs, in docstrings, or even on the web in blog posts,
+django-mtls-auth could always use more documentation, whether as part of the 
+official django-mtls-auth docs, in docstrings, or even on the web in blog posts,
 articles, and such.
 
 Submit Feedback
 ~~~~~~~~~~~~~~~
 
-The best way to send feedback is to file an issue at https://github.com/fretscha/django-tls-auth/issues.
+The best way to send feedback is to file an issue at https://github.com/fretscha/django-mtls-auth/issues.
 
 If you are proposing a feature:
 
@@ -55,13 +55,13 @@ If you are proposing a feature:
 Get Started!
 ------------
 
-Ready to contribute? Here's how to set up `django-tls-auth` for local development.
+Ready to contribute? Here's how to set up `django-mtls-auth` for local development.
 
-1. Fork the `django-tls-auth` repo on GitHub.
+1. Fork the `django-mtls-auth` repo on GitHub.
 2. Clone your fork locally::
 
-    $ git clone git@github.com:your_name_here/django-tls-auth.git
-    $ cd django-tls-auth/
+    $ git clone git@github.com:your_name_here/django-mtls-auth.git
+    $ cd django-mtls-auth/
 
 3. Install your local copy into a virtualenv. Assuming you have virtualenvwrapper installed, this is how you set up your fork for local development::
 
@@ -77,8 +77,8 @@ Ready to contribute? Here's how to set up `django-tls-auth` for local developmen
 5. When you're done making changes, check that your changes pass flake8, documentation build and the
    tests, including testing other Python versions with nox::
 
-        $ poetry run ruff tls_auth
-        $ poetry run sphinx-apidoc -o docs/ tls_auth --force
+        $ poetry run ruff mmmtls_auth
+        $ poetry run sphinx-apidoc -o docs/ mtls_auth --force
         $ poetry run nox
 
 6. Commit your changes and push your branch to GitHub::
@@ -99,7 +99,7 @@ Before you submit a pull request, check that it meets these guidelines:
    your new functionality into a function with a docstring, and add the
    feature to the list in README.rst.
 3. The pull request should work for the python versions defined on noxfile.py. Check 
-   https://travis-ci.org/fretscha/django-tls-auth/pull_requests
+   https://travis-ci.org/fretscha/django-mtls-auth/pull_requests
    and make sure that the tests pass for all supported Python versions.
 
 

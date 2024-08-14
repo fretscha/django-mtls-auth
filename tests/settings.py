@@ -52,7 +52,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    "tls_auth.middleware.TLSAuthenticationMiddleware",
+    "mtls_auth.middleware.MTLSAuthenticationMiddleware",
 ]
 
 ROOT_URLCONF = "tests.urls"
@@ -123,23 +123,23 @@ STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-# TLS Auth settings
+# MTLS Auth settings
 
 # default user data extractor
 # or define your own
-# TLS_AUTH_USER_DATA_EXTRACTOR_CLASS = "example.utils.DefaultUserDataExtractor"
+# MTLS_AUTH_USER_DATA_EXTRACTOR_CLASS = "example.utils.DefaultUserDataExtractor"
 
 # Create user if not exists, hence auto registration
-TLS_AUTH_AUTOCREATE_USER = True
+MTLS_AUTH_AUTOCREATE_USER = True
 
 # Header containing User identifing DN
-TLS_AUTH_REVERSE_PROXY_USER_DN_HEADER = "X-SSL-USER-DN"
+MTLS_AUTH_REVERSE_PROXY_USER_DN_HEADER = "X-SSL-USER-DN"
 
 # Header containing Issuer DN
-TLS_AUTH_REVERSE_PROXY_ISSUER_DN_HEADER = "X-SSL-ISSUER-DN"
+MTLS_AUTH_REVERSE_PROXY_ISSUER_DN_HEADER = "X-SSL-ISSUER-DN"
 
 # Forwarded verification result
-TLS_AUTH_REVERSE_PROXY_SUCCESS_HEADER = "X-SSL-AUTHENTICATED"
+MTLS_AUTH_REVERSE_PROXY_SUCCESS_HEADER = "X-SSL-AUTHENTICATED"
 
 # example
 LOGIN_URL = reverse_lazy("login")

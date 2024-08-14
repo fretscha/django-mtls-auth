@@ -1,8 +1,8 @@
 
-# django-tls-auth
+# django-mtls-auth
 
 ![Beta](https://img.shields.io/badge/beta-red)
-![Dynamic TOML Badge](https://img.shields.io/badge/dynamic/toml?url=https%3A%2F%2Fraw.githubusercontent.com%2Ffretscha%2Fdjango-tls-auth%2Fmain%2Fpyproject.toml&query=%24.tool.poetry.version&label=latest%20release)
+![Dynamic TOML Badge](https://img.shields.io/badge/dynamic/toml?url=https%3A%2F%2Fraw.githubusercontent.com%2Ffretscha%2Fdjango-mtls-auth%2Fmain%2Fpyproject.toml&query=%24.tool.poetry.version&label=latest%20release)
 
 
 
@@ -12,14 +12,14 @@ This Django middleware package enables authentication via request headers sent b
 Documentation
 -------------
 
-~~The full documentation is at https://django-tls-auth.readthedocs.io.~~
+~~The full documentation is at https://django-mtls-auth.readthedocs.io.~~
 
 Quickstart
 ----------
 
-Install django-tls-auth
+Install django-mtls-auth
 ```shell script
-pip install django-tls-auth
+pip install django-mtls-auth
 ```
 
 Add it to your `MIDDLEWARE`
@@ -27,7 +27,7 @@ Add it to your `MIDDLEWARE`
 ```python
 MIDDLEWARE = [
     ...
-    "tls_auth.middleware.TLSAuthenticationMiddleware",
+    "mtls_auth.middleware.MTLSAuthenticationMiddleware",
 ]
 ```
 
@@ -43,7 +43,7 @@ MIDDLEWARE = [
 
 Does the code actually work?
 ```shell script
-cd django-tls-auth
+cd django-mtls-auth
 poetry install
 
 poetry run pytest

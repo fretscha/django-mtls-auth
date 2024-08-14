@@ -1,23 +1,24 @@
 [tool.poetry]
-name = "django-tls-auth"
-version = "0.2.0"
-description = "Enable mTLS authetication to your Django project"
+name = "django-mtls-auth"
+version = "0.2.1"
+description = "Enable mMTLS authentication to your Django projects"
 authors = ["Frederic Tschannen <fretscha@umx.net>"]
 license = "MIT"
 readme = "README.md"
-homepage = "https://github.com/fretscha/django-tls-auth"
-repository = "https://github.com/fretscha/django-tls-auth"
-documentation = "https://django-tls-auth.readthedocs.io"
+homepage = "https://github.com/fretscha/django-mtls-auth"
+repository = "https://github.com/fretscha/django-mtls-auth"
+documentation = "https://django-mtls-auth.readthedocs.io"
 keywords = [
     "django",
-    "mtls",
-    "client-cert",
-    "auth",
+    "tls",
+    "ssl",
+    "client-certificate",
+    "authentication",
     "nginx",
     "apache2",
     "reverse-proxy",
 ]
-packages = [{ include = "tls_auth", from = "." }]
+packages = [{ include = "mtls_auth", from = "." }]
 classifiers = [
     "Intended Audience :: Information Technology",
     "Intended Audience :: System Administrators",

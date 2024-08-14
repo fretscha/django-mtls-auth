@@ -8,7 +8,7 @@ from .utils import get_user_data_extractor_class
 User = get_user_model()
 
 
-class TLSAuthenticationMiddleware(MiddlewareMixin):
+class MTLSAuthenticationMiddleware(MiddlewareMixin):
     def process_request(self, request):
         # Skip middleware if the user is already authenticated
         if request.user.is_authenticated:
@@ -41,7 +41,7 @@ class TLSAuthenticationMiddleware(MiddlewareMixin):
                 else:
                     return JsonResponse({"error": "Invalid user"}, status=401)
             else:
-                return JsonResponse({"error": "invalid TLS certificate"}, status=401)
+                return JsonResponse({"error": "invalid MTLS certificate"}, status=401)
         else:
             # Fallback to traditional username/password authentication
             return None
