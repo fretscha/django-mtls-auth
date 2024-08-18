@@ -34,7 +34,7 @@ class UserDataExtractor(ABC):
         :param subject_dn: The subjectDN string from the client certificate.
         :return: A dictionary containing the extracted user data.
         """
-        pass
+        NotImplemented("This method must be implemented in a subclass")
 
 
 class DefaultUserDataExtractor(UserDataExtractor):
